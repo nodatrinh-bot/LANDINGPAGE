@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thử Thách 2 Ngày Cùng Trinh Canary - Cỗ Máy Hút F1 Tự Động & Dòng Tiền 100 Triệu</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Chấm dứt hoàn toàn cảnh chèo kéo người thân. Trinh Canary chuyển giao hệ thống hút đối tác F1 tự động 24/7 từ Internet và nhân bản đội nhóm vô địch.">
+  <meta property="og:title" content="Thử Thách 2 Ngày Cùng Trinh Canary: Cỗ Máy Hút F1 Tự Động & Dòng Tiền 100 Triệu/Tháng">
+  <meta property="og:description" content="Chỉ trong 2 ngày: Sở hữu phễu tuyển dụng tự động, kịch bản chốt đối tác 5 phút, 365 ngày nội dung hút người lạ xin làm F1.">
+  <meta property="og:image" content="trinh-canary.png">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Oswald & Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            headline: ['Oswald', 'sans-serif'],
+            body: ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            brandRed: '#d10000',
+            darkRed: '#960000',
+            brandPink: '#FF0085',
+            brandPinkDark: '#C54C82',
+            brandTeal: '#3b9c7b',
+            brandCyan: '#00b0aa',
+            brandGold: '#f59e0b',
+            brandDark: '#121212',
+            brandGray: '#f4f4f6',
+            zaloBlue: '#0068FF',
+          },
+          boxShadow: {
+            'funnel': '0 10px 30px -5px rgba(209, 0, 0, 0.35)',
+            'cta': '0 8px 25px rgba(255, 0, 133, 0.45)',
+            'card': '0 4px 20px rgba(0, 0, 0, 0.08)',
+            'zalo': '0 6px 20px rgba(0, 104, 255, 0.45)',
+          },
+          keyframes: {
+            pulseCustom: {
+              '0%, 100%': { transform: 'scale(1)' },
+              '50%': { transform: 'scale(1.025)' },
+            }
+          },
+          animation: {
+            pulseCustom: 'pulseCustom 2s infinite ease-in-out',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #212121;
+      background-color: #f7f7f8;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, .font-headline {
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .text-gradient-pink {
+      background: linear-gradient(135deg, #FF0085 0%, #d10000 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .text-gradient-gold {
+      background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .bg-gradient-urgent {
+      background: linear-gradient(90deg, #960000 0%, #d10000 50%, #960000 100%);
+    }
+    .cta-btn-shimmer {
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-btn-shimmer::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -60%;
+      width: 25%;
+      height: 200%;
+      background: rgba(255, 255, 255, 0.35);
+      transform: rotate(30deg);
+      animation: shimmerBtn 3s infinite;
+    }
+    @keyframes shimmerBtn {
+      0% { left: -60%; }
+      35% { left: 120%; }
+      100% { left: 120%; }
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- ================= TOP URGENCY BANNER ================= -->
+  <header class="bg-gradient-urgent text-white py-2.5 px-4 sticky top-0 z-40 shadow-md">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between text-center sm:text-left gap-2 text-sm sm:text-base font-semibold">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center bg-white text-darkRed w-6 h-6 rounded-full text-xs font-bold animate-ping">⚡</span>
+        <span>🔥 THỬ THÁCH 2 NGÀY CÙNG TRINH CANARY: HÚT F1 TỰ ĐỘNG & TẠO DÒNG TIỀN THỤ ĐỘNG!</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs sm:text-sm bg-black/35 px-3 py-1 rounded-full border border-white/20">
+        <span>⏳ Đóng cổng sau:</span>
+        <span id="countdown" class="font-mono font-bold text-yellow-300 tracking-wider">14:59</span>
+        <span class="text-white/80">| Còn đúng <strong>7 suất kèm cặp</strong></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="relative bg-gradient-to-b from-brandGray via-white to-gray-100 pt-10 pb-16 px-4 border-b border-gray-300">
+    <div class="max-w-5xl mx-auto text-center">
+      
+      <!-- Top Tag Badge -->
+      <div class="inline-flex items-center gap-2 bg-red-100 text-brandRed border border-brandRed/30 px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider mb-6 shadow-sm">
+        <i class="fas fa-bullhorn"></i> Trực tiếp cùng Leader Trinh Canary (Hotline: 0906.885.584)
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-black leading-tight mb-4 tracking-tight">
+        CHẤM DỨT NỖI SỢ <span class="text-brandRed">CHÈO KÉO NGƯỜI THÂN!</span><br>
+        BÍ MẬT HÚT <span class="text-brandPink">5 - 10 ĐỐI TÁC F1 CHẤT LƯỢNG MỖI TUẦN</span><br>
+        HOÀN TOÀN TỰ ĐỘNG TỪ INTERNET
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="text-lg sm:text-2xl font-medium text-gray-700 max-w-3xl mx-auto leading-relaxed mb-6">
+        Chỉ trong <strong>2 ngày</strong>, Trinh Canary chuyển giao trọn bộ: <span class="text-brandPink font-bold">Phễu Tuyển Dụng 24/7 - Kịch Bản Lọc F1 Trong 5 Phút - 365 Ngày Video Hút Khách Lạ.</span> Để người khác <strong>chủ động xin tham gia</strong> vào đội nhóm của bạn!
+      </p>
+
+      <!-- Video Mockup / VSL Box -->
+      <div class="max-w-3xl mx-auto mb-8 relative group rounded-2xl overflow-hidden shadow-2xl border-4 border-black/85 bg-black">
+        <div class="relative pb-[56.25%] h-0">
+          <!-- Video Thumbnail Image with Trinh Canary Portrait -->
+          <img src="trinh-canary.png" 
+               alt="Trinh Canary - Thử Thách Tuyển F1 Tự Động" 
+               class="absolute inset-0 w-full h-full object-cover object-top opacity-90 group-hover:scale-105 transition-transform duration-500">
+          
+          <!-- Play Button Overlay -->
+          <div class="absolute inset-0 flex items-center justify-center bg-black/45 cursor-pointer" onclick="openVideoModal()">
+            <div class="w-20 h-20 sm:w-24 sm:h-24 bg-brandPink text-white rounded-full flex items-center justify-center shadow-cta hover:bg-darkRed hover:scale-110 transition-all duration-300 animate-pulse">
+              <i class="fas fa-play text-2xl sm:text-3xl ml-1"></i>
+            </div>
+          </div>
+
+          <!-- Video Badge -->
+          <div class="absolute bottom-4 left-4 right-4 bg-black/85 backdrop-blur-sm text-white px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold flex items-center justify-between">
+            <span class="flex items-center gap-2"><i class="fas fa-play-circle text-brandPink"></i> Bấm để xem Video hé lộ Cỗ Máy Tuyển Dụng F1 từ Trinh Canary</span>
+            <span class="text-yellow-400 font-bold">Quà tặng 125.970.000đ bên trong!</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Primary CTA Button -->
+      <div class="max-w-xl mx-auto">
+        <button onclick="openRegisterModal('Hero Section')" 
+                class="cta-btn-shimmer w-full bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-500 hover:from-yellow-300 hover:to-amber-400 text-brandDark font-extrabold text-xl sm:text-2xl py-4 px-8 rounded-xl shadow-2xl border-2 border-yellow-200 transform transition hover:-translate-y-1 active:translate-y-0 text-center animate-pulseCustom">
+          <div class="flex items-center justify-center gap-3">
+            <i class="fas fa-hand-point-right text-brandPink text-2xl"></i>
+            <span>ĐĂNG KÝ THỬ THÁCH HÚT F1 TỰ ĐỘNG NGAY</span>
+          </div>
+          <p class="text-xs sm:text-sm font-medium text-gray-900 mt-1 uppercase tracking-wide opacity-90">
+            👉 Nhấn vào đây để nhận vé miễn phí & trọn bộ phễu tuyển dụng
+          </p>
+        </button>
+        <div class="flex items-center justify-center gap-4 mt-3 text-xs sm:text-sm text-gray-600 font-medium">
+          <span class="flex items-center gap-1.5"><i class="fas fa-phone-alt text-brandRed"></i> Hotline/Zalo: <a href="https://zalo.me/0906885584" target="_blank" class="font-bold text-brandRed hover:underline">0906.885.584</a></span>
+          <span>•</span>
+          <span class="flex items-center gap-1.5"><i class="fas fa-shield-alt text-brandTeal"></i> Đồng hành 1-1 cùng Trinh Canary</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= THE STORY & PAIN POINTS ================= -->
+  <section class="py-16 px-4 bg-white border-b border-gray-200">
+    <div class="max-w-3xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-10">
+        <span class="text-brandPink font-bold text-sm sm:text-base tracking-widest uppercase">Tâm sự từ Leader Trinh Canary</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brandDark mt-1">
+          BẠN À... CÓ PHẢI BẠN ĐANG MẮC KẸT TRONG <span class="text-brandRed">CƠN ÁC MỘNG NÀY?</span>
+        </h2>
+        <div class="w-24 h-1 bg-brandPink mx-auto mt-3 rounded-full"></div>
+      </div>
+
+      <!-- Letter Content -->
+      <div class="space-y-6 text-gray-800 text-base sm:text-lg leading-relaxed bg-pink-50/50 p-6 sm:p-10 rounded-2xl border border-pink-100 shadow-sm">
+        
+        <div class="flex items-center gap-4 border-b border-pink-200 pb-4">
+          <img src="trinh-canary.png" 
+               alt="Trinh Canary" 
+               class="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover object-top border-2 border-brandPink shadow-md">
+          <div>
+            <h4 class="font-bold text-lg sm:text-xl text-brandDark">TRINH CANARY</h4>
+            <p class="text-xs sm:text-sm text-gray-600">Thủ Lĩnh & Chuyên Gia Tự Động Hóa Tuyển F1 • Zalo: 0906.885.584</p>
+          </div>
+        </div>
+
+        <p class="font-semibold text-brandDark">
+          ✉️ <em class="underline decoration-yellow-400">Thân gửi bạn - Người đồng nghiệp đang ngày đêm trăn trở tìm F1 và giữ lửa đội nhóm...</em>
+        </p>
+
+        <p>
+          Trinh hiểu rất rõ cảm giác của bạn lúc này. Chúng ta gia nhập ngành kinh doanh hệ thống với ước mơ cháy bỏng về <strong>Tự Do Tài Chính, Tự Do Thời Gian</strong> và nguồn thu nhập thụ động để lo cho gia đình, con cái...
+        </p>
+
+        <p>
+          Nhưng thực tế thì sao?
+        </p>
+
+        <div class="bg-white p-5 rounded-xl border-l-4 border-brandRed shadow-sm space-y-3">
+          <p class="font-bold text-brandRed text-base sm:text-lg">
+            🚨 Trinh cũng từng trải qua những tháng ngày bế tắc như bạn:
+          </p>
+          <ul class="space-y-2 text-sm sm:text-base text-gray-700">
+            <li class="flex items-start gap-2">
+              <i class="fas fa-times-circle text-brandRed mt-1"></i>
+              <span><strong>Mối quan hệ cạn kiệt:</strong> Nhắn tin cho bạn bè, người thân thì họ lảng tránh, sợ mình "dụ dỗ làm đa cấp".</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fas fa-times-circle text-brandRed mt-1"></i>
+              <span><strong>Mời cà phê kiệt sức:</strong> Ngồi cả buổi, tốn tiền nước, nghe họ hứa hẹn nhiệt tình rồi về... chặn số luôn!</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fas fa-times-circle text-brandRed mt-1"></i>
+              <span><strong>F1 rụng như lá mùa thu:</strong> Vất vả tuyển được 1 người vào, họ không biết bắt đầu từ đâu, làm 2 tuần nản rồi nghỉ.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fas fa-times-circle text-brandRed mt-1"></i>
+              <span><strong>Tuyến trên cứ bảo:</strong> "Cứ kiên trì lập danh sách người quen đi em"... trong khi cách làm đó đã <strong>lỗi thời từ 10 năm trước!</strong></span>
+            </li>
+          </ul>
+        </div>
+
+        <p class="font-bold text-brandDark">
+          Trinh muốn khẳng định với bạn: <span class="text-brandTeal">BẠN KHÔNG KÉM CỎI! BẠN HOÀN TOÀN CÓ TỐ CHẤT THỦ LĨNH!</span><br>
+          Chỉ là bạn chưa được tiếp cận với <strong>HỆ THỐNG CÔNG NGHỆ ĐÚNG</strong> mà thôi.
+        </p>
+
+        <div class="bg-gradient-to-r from-brandPink/15 to-teal-100/60 p-6 rounded-xl border border-brandPink/30 text-center">
+          <h3 class="text-xl sm:text-2xl font-bold text-brandPink mb-2">BƯỚC NGOẶT ĐỘT PHÁ CỦA TRINH CANARY</h3>
+          <p class="text-gray-900 font-semibold text-base sm:text-lg">
+            🌟 Thay vì đi săn đuổi người quen, Trinh xây dựng một <strong>CỖ MÁY HÚT ĐỐI TÁC 24/7</strong> trên Internet. Để những người có khao khát kinh doanh thực sự <strong>tự tìm đến và xin Trinh hướng dẫn làm F1!</strong>
+          </p>
+        </div>
+
+        <div class="text-center pt-4">
+          <button onclick="openRegisterModal('Story Section')" class="bg-brandTeal hover:bg-emerald-600 text-white font-bold py-3.5 px-8 rounded-xl shadow-lg transition transform hover:scale-105 text-sm sm:text-base">
+            <i class="fas fa-arrow-circle-right mr-2"></i> TÔI MUỐN TRINH CANARY HƯỚNG DẪN MÔ HÌNH NÀY
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 2-DAY CURRICULUM BREAKDOWN ================= -->
+  <section class="py-16 px-4 bg-gray-50 border-b border-gray-200">
+    <div class="max-w-5xl mx-auto">
+      
+      <div class="text-center mb-12">
+        <span class="bg-brandDark text-yellow-300 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Chương trình chuyển giao độc quyền</span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-brandDark mt-3">
+          LỘ TRÌNH 2 NGÀY: SỞ HỮU <span class="text-brandPink">CỖ MÁY TUYỂN F1 VÔ ĐỊCH</span>
+        </h2>
+        <p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto mt-2">
+          Trinh Canary trực tiếp cầm tay chỉ việc ngay trên điện thoại để bạn cài đặt hệ thống hút người lạ!
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- DAY 1 CARD -->
+        <div class="bg-white rounded-2xl shadow-card border-2 border-brandPink/40 overflow-hidden flex flex-col">
+          <div class="bg-gradient-to-r from-brandPink to-darkRed text-white p-6">
+            <div class="flex items-center justify-between">
+              <span class="text-xs uppercase tracking-widest bg-white/20 px-3 py-1 rounded-full font-bold">Thực chiến ngày 1</span>
+              <i class="fas fa-magnet text-2xl opacity-80"></i>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-extrabold mt-3">
+              NGÀY 1: NGUYÊN LÝ HÚT KHÁCH LẠ & ĐỊNH VỊ THƯƠNG HIỆU THỦ LĨNH
+            </h3>
+          </div>
+          
+          <div class="p-6 sm:p-8 space-y-6 flex-1">
+            
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-pink-100 text-brandPink flex items-center justify-center font-bold text-lg shrink-0">
+                #1
+              </div>
+              <div>
+                <h4 class="font-bold text-lg text-brandDark">Tại Sao 95% Người Làm MLM Thất Bại & Bí Mật "Attraction Marketing"</h4>
+                <p class="text-gray-600 text-sm mt-1">
+                  Cách chuyển từ tư thế người "chèo kéo, nài nỉ" sang vị thế "chuyên gia trao cơ hội", khiến người khác khao khát được đồng hành cùng bạn.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-pink-100 text-brandPink flex items-center justify-center font-bold text-lg shrink-0">
+                #2
+              </div>
+              <div>
+                <h4 class="font-bold text-lg text-brandDark">Công Thức Xây Profile Cá Nhân Hút 10.000+ Người Có Máu Kinh Doanh</h4>
+                <p class="text-gray-600 text-sm mt-1">
+                  Biến Facebook, TikTok của bạn thành thỏi nam châm hút đúng tệp người đang tìm kiếm cơ hội khởi nghiệp, mẹ bỉm muốn kiếm tiền, dân văn phòng chán việc.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-pink-100 text-brandPink flex items-center justify-center font-bold text-lg shrink-0">
+                #3
+              </div>
+              <div>
+                <h4 class="font-bold text-lg text-brandDark">Chiến Lược Dòng Tiền 100 Triệu/Tháng Không Phụ Thuộc Vào Cấp Bậc</h4>
+                <p class="text-gray-600 text-sm mt-1">
+                  Kết hợp sức mạnh Affiliate + Hoa hồng MLM để có dòng tiền dương ngay từ tháng đầu tiên, không bao giờ phải bỏ tiền túi ra ôm hàng giữ điểm.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- DAY 2 CARD -->
+        <div class="bg-white rounded-2xl shadow-card border-2 border-brandTeal/50 overflow-hidden flex flex-col">
+          <div class="bg-gradient-to-r from-brandTeal to-emerald-800 text-white p-6">
+            <div class="flex items-center justify-between">
+              <span class="text-xs uppercase tracking-widest bg-white/20 px-3 py-1 rounded-full font-bold">Thực chiến ngày 2</span>
+              <i class="fas fa-cogs text-2xl opacity-80"></i>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-extrabold mt-3">
+              NGÀY 2: BẬT PHỄU HÚT F1 TỰ ĐỘNG & QUY TRÌNH NHÂN BẢN VÔ HẠN
+            </h3>
+          </div>
+          
+          <div class="p-6 sm:p-8 space-y-6 flex-1">
+            
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-teal-100 text-brandTeal flex items-center justify-center font-bold text-lg shrink-0">
+                #1
+              </div>
+              <div>
+                <h4 class="font-bold text-lg text-brandDark">Sao Chép & Cài Đặt Phễu Tuyển Dụng Tự Động Trong 15 Phút</h4>
+                <p class="text-gray-600 text-sm mt-1">
+                  Trinh Canary trao ngay nguyên mẫu Landing Page & Form tự động thu thập thông tin ứng viên, phân loại tự động trước khi chuyển về Zalo của bạn.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-teal-100 text-brandTeal flex items-center justify-center font-bold text-lg shrink-0">
+                #2
+              </div>
+              <div>
+                <h4 class="font-bold text-lg text-brandDark">Kịch Bản Tư Vấn 5 Phút: Lọc Sạch Người Lười - Chốt Đúng F1 Cam Kết</h4>
+                <p class="text-gray-600 text-sm mt-1">
+                  Bộ câu hỏi tâm lý đỉnh cao giúp bạn làm chủ cuộc trò chuyện, không mất thời gian giải thích lan man, ứng viên tự nhận thấy họ cần gia nhập đội nhóm của bạn.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-teal-100 text-brandTeal flex items-center justify-center font-bold text-lg shrink-0">
+                #3
+              </div>
+              <div>
+                <h4 class="font-bold text-lg text-brandDark">Bộ Quy Trình Đào Tạo 7 Ngày Để F1 Tự Nhân Bản Ra F2, F3</h4>
+                <p class="text-gray-600 text-sm mt-1">
+                  Cách đóng gói quy trình để khi có F1 mới, bạn chỉ cần gửi bộ tài liệu là họ tự chạy được, giúp bạn hoàn toàn rảnh tay hưởng thụ thu nhập thụ động.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Mid CTA Button -->
+      <div class="text-center mt-12">
+        <button onclick="openRegisterModal('Curriculum Section')" 
+                class="cta-btn-shimmer bg-brandRed hover:bg-darkRed text-white font-extrabold text-xl py-4 px-10 rounded-xl shadow-funnel transition transform hover:scale-105">
+          <i class="fas fa-check-circle mr-2 text-yellow-300"></i> GIỮ CHỖ THAM GIA THỬ THÁCH 2 NGÀY CÙNG TRINH CANARY
+        </button>
+        <p class="text-xs text-gray-500 mt-2">Duy nhất 7 suất kèm cặp trực tiếp trong tháng này</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 8 MEGA BONUSES SECTION ================= -->
+  <section class="py-16 px-4 bg-white border-b border-gray-200">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="text-center mb-12">
+        <span class="bg-red-100 text-brandRed border border-brandRed/30 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Vũ Khí Xây Dựng Hệ Thống</span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-brandDark mt-3">
+          KHO QUÀ TẶNG CHUYỂN GIAO <span class="text-brandPink">TRỊ GIÁ 125.970.000 VNĐ</span>
+        </h2>
+        <p class="text-gray-700 text-base sm:text-lg max-w-3xl mx-auto mt-2">
+          Toàn bộ công cụ, kịch bản và phễu tuyển dụng này được Trinh Canary trao <strong>MIỄN PHÍ</strong> để bạn áp dụng tuyển F1 ngay tuần này!
+        </p>
+      </div>
+
+      <!-- Bonus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Bonus 1 -->
+        <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 hover:border-brandPink transition shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="bg-brandPink text-white text-xs font-bold px-2.5 py-1 rounded">QUÀ TẶNG #1</span>
+              <span class="text-xs font-bold text-brandRed">12.500.000đ</span>
+            </div>
+            <h4 class="font-bold text-brandDark text-base mb-2">Landing Page Tuyển Dụng F1 Chuyển Đổi Cao (Làm Sẵn)</h4>
+            <p class="text-gray-600 text-xs leading-relaxed">
+              Bạn không cần biết lập trình. Chỉ cần 1 cú click là có ngay website phễu hút ứng viên chuyên nghiệp mang tên bạn để chia sẻ lên MXH.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-gray-200 flex items-center justify-between text-xs">
+            <span class="text-green-600 font-bold"><i class="fas fa-check"></i> Copy & Paste</span>
+            <span class="text-gray-400 line-through">12.500.000đ</span>
+          </div>
+        </div>
+
+        <!-- Bonus 2 -->
+        <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 hover:border-brandPink transition shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="bg-brandPink text-white text-xs font-bold px-2.5 py-1 rounded">QUÀ TẶNG #2</span>
+              <span class="text-xs font-bold text-brandRed">15.000.000đ</span>
+            </div>
+            <h4 class="font-bold text-brandDark text-base mb-2">Bộ 365 Kịch Bản Video Ngắn Hút Ứng Viên Kinh Doanh</h4>
+            <p class="text-gray-600 text-xs leading-relaxed">
+              365 kịch bản ngắn đã viết sẵn từng câu từng chữ. Bạn chỉ việc mở điện thoại đọc theo để hút hàng ngàn người có máu kinh doanh nhắn tin xin tư vấn.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-gray-200 flex items-center justify-between text-xs">
+            <span class="text-green-600 font-bold"><i class="fas fa-check"></i> 100% Traffic 0Đ</span>
+            <span class="text-gray-400 line-through">15.000.000đ</span>
+          </div>
+        </div>
+
+        <!-- Bonus 3 -->
+        <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 hover:border-brandPink transition shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="bg-brandPink text-white text-xs font-bold px-2.5 py-1 rounded">QUÀ TẶNG #3</span>
+              <span class="text-xs font-bold text-brandRed">10.868.000đ</span>
+            </div>
+            <h4 class="font-bold text-brandDark text-base mb-2">Kịch Bản Lọc F1 & Xử Lý Từ Chối Trong 5 Phút</h4>
+            <p class="text-gray-600 text-xs leading-relaxed">
+              Cách xử lý ngọt ngào các câu hỏi khó như: "Có phải đa cấp không?", "Tôi không có tiền", "Tôi không có duyên bán hàng" để đối tác tự động gật đầu.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-gray-200 flex items-center justify-between text-xs">
+            <span class="text-green-600 font-bold"><i class="fas fa-check"></i> Chốt sale đỉnh cao</span>
+            <span class="text-gray-400 line-through">10.868.000đ</span>
+          </div>
+        </div>
+
+        <!-- Bonus 4 -->
+        <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 hover:border-brandPink transition shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="bg-brandPink text-white text-xs font-bold px-2.5 py-1 rounded">QUÀ TẶNG #4</span>
+              <span class="text-xs font-bold text-brandRed">18.500.000đ</span>
+            </div>
+            <h4 class="font-bold text-brandDark text-base mb-2">Quy Trình Onboarding Kích Hoạt F1 Trong 7 Ngày Đầu</h4>
+            <p class="text-gray-600 text-xs leading-relaxed">
+              Bộ checklist hướng dẫn đối tác mới kiếm được đơn hàng đầu tiên trong tuần đầu, giúp họ hưng phấn và gắn bó trung thành với bạn.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-gray-200 flex items-center justify-between text-xs">
+            <span class="text-green-600 font-bold"><i class="fas fa-check"></i> Chống rụng F1</span>
+            <span class="text-gray-400 line-through">18.500.000đ</span>
+          </div>
+        </div>
+
+        <!-- Bonus 5 -->
+        <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 hover:border-brandTeal transition shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="bg-brandTeal text-white text-xs font-bold px-2.5 py-1 rounded">QUÀ TẶNG #5</span>
+              <span class="text-xs font-bold text-brandRed">9.868.000đ</span>
+            </div>
+            <h4 class="font-bold text-brandDark text-base mb-2">Công Thức Xây Kênh TikTok Triệu View Tuyển Đại Lý</h4>
+            <p class="text-gray-600 text-xs leading-relaxed">
+              Các dạng nội dung truyền cảm hứng kinh doanh, kể chuyện bản thân giúp bạn có tệp theo dõi khổng lồ mà không cần nhảy nhót.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-gray-200 flex items-center justify-between text-xs">
+            <span class="text-green-600 font-bold"><i class="fas fa-check"></i> Xây dựng nhân hiệu</span>
+            <span class="text-gray-400 line-through">9.868.000đ</span>
+          </div>
+        </div>
+
+        <!-- Bonus 6 -->
+        <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 hover:border-brandTeal transition shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="bg-brandTeal text-white text-xs font-bold px-2.5 py-1 rounded">QUÀ TẶNG #6</span>
+              <span class="text-xs font-bold text-brandRed">19.868.000đ</span>
+            </div>
+            <h4 class="font-bold text-brandDark text-base mb-2">Hệ Thống Tự Động Gửi Tin Nhắn Chăm Sóc Ứng Viên</h4>
+            <p class="text-gray-600 text-xs leading-relaxed">
+              Kịch bản nuôi dưỡng ứng viên tự động qua Zalo/Email. Người chưa đồng ý hôm nay sẽ được hệ thống chăm sóc để sau này tự xin tham gia.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-gray-200 flex items-center justify-between text-xs">
+            <span class="text-green-600 font-bold"><i class="fas fa-check"></i> Chăm sóc 24/7</span>
+            <span class="text-gray-400 line-through">19.868.000đ</span>
+          </div>
+        </div>
+
+        <!-- Bonus 7 -->
+        <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 hover:border-brandTeal transition shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="bg-brandTeal text-white text-xs font-bold px-2.5 py-1 rounded">QUÀ TẶNG #7</span>
+              <span class="text-xs font-bold text-brandRed">20.000.000đ</span>
+            </div>
+            <h4 class="font-bold text-brandDark text-base mb-2">Bản Thiết Kế Dòng Tiền Thụ Động 100+ Triệu</h4>
+            <p class="text-gray-600 text-xs leading-relaxed">
+              Cách tính toán cơ cấu sơ đồ đội nhóm, cân nhánh, tối ưu hóa điểm số để bạn đạt thu nhập tối đa với ít công sức nhất.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-gray-200 flex items-center justify-between text-xs">
+            <span class="text-green-600 font-bold"><i class="fas fa-check"></i> Tối ưu hoa hồng</span>
+            <span class="text-gray-400 line-through">20.000.000đ</span>
+          </div>
+        </div>
+
+        <!-- Bonus 8 -->
+        <div class="bg-yellow-50 rounded-xl p-5 border-2 border-yellow-400 hover:border-brandPink transition shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="bg-yellow-500 text-brandDark text-xs font-extrabold px-2.5 py-1 rounded">QUÀ TẶNG #8</span>
+              <span class="text-xs font-bold text-brandRed">VÔ GIÁ</span>
+            </div>
+            <h4 class="font-bold text-brandDark text-base mb-2">Vé Tham Gia Nhóm Kín Thủ Lĩnh MLM 4.0</h4>
+            <p class="text-gray-600 text-xs leading-relaxed">
+              Giao lưu, hỏi đáp và nhận hỗ trợ chiến lược trực tiếp từ Trinh Canary và các thủ lĩnh đang có hệ thống hàng ngàn thành viên.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-yellow-300 flex items-center justify-between text-xs">
+            <span class="text-green-600 font-bold"><i class="fas fa-crown"></i> Quyền lợi VIP</span>
+            <span class="text-brandPink font-bold">VÔ GIÁ</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Total Value Callout Box -->
+      <div class="mt-10 bg-gradient-to-r from-red-600 via-brandRed to-pink-600 text-white p-8 rounded-2xl text-center shadow-xl">
+        <h3 class="text-2xl sm:text-3xl font-extrabold">TỔNG GIÁ TRỊ VŨ KHÍ TUYỂN DỤNG: 125.970.000 VNĐ</h3>
+        <p class="text-yellow-300 text-lg sm:text-xl font-bold mt-1">HÔM NAY: TẶNG MIỄN PHÍ KHI THAM GIA THỬ THÁCH CÙNG TRINH CANARY</p>
+        <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button onclick="openRegisterModal('Mega Bonus Section')" 
+                  class="bg-yellow-400 hover:bg-yellow-300 text-brandDark font-extrabold text-lg sm:text-xl py-3.5 px-8 rounded-xl shadow-lg transition transform hover:scale-105">
+            🎁 TÔI MUỐN NHẬN TRỌN BỘ CÔNG CỤ HÚT F1 MIỄN PHÍ
+          </button>
+          <a href="https://zalo.me/0906885584" target="_blank"
+             class="bg-white/20 hover:bg-white/30 text-white font-bold py-3.5 px-6 rounded-xl border border-white/40 transition flex items-center gap-2">
+            <i class="fas fa-comment-dots"></i> Chat Zalo trực tiếp với Trinh Canary
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ABOUT TRAINER SECTION ================= -->
+  <section class="py-16 px-4 bg-white border-b border-gray-200">
+    <div class="max-w-4xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row items-center gap-10">
+        
+        <!-- Trainer Photo -->
+        <div class="w-full md:w-2/5 text-center">
+          <div class="relative inline-block">
+            <div class="absolute -inset-2 bg-gradient-to-r from-brandPink to-brandTeal rounded-3xl blur-xl opacity-40"></div>
+            <img src="trinh-canary.png" 
+                 alt="Trinh Canary" 
+                 class="relative w-64 h-84 sm:w-72 sm:h-96 rounded-3xl object-cover object-top shadow-2xl border-4 border-white">
+          </div>
+          <p class="font-bold text-2xl text-brandDark mt-4 tracking-wider">TRINH CANARY</p>
+          <p class="text-sm text-brandPink font-bold uppercase tracking-wider">Thủ Lĩnh & Chuyên Gia Tự Động Hóa Tuyển F1</p>
+          <div class="mt-2">
+            <a href="https://zalo.me/0906885584" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-brandRed hover:underline">
+              <i class="fas fa-phone-alt"></i> Hotline/Zalo: 0906.885.584
+            </a>
+          </div>
+        </div>
+
+        <!-- Trainer Bio -->
+        <div class="w-full md:w-3/5 space-y-4">
+          <span class="bg-gray-100 text-gray-800 text-xs font-bold px-3 py-1 rounded-full uppercase">Người Đồng Hành Cùng Bạn</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brandDark leading-tight">
+            NGƯỜI HUẤN LUYỆN BẠN TRONG <span class="text-brandPink">21 NGÀY THỬ THÁCH</span>
+          </h2>
+          <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+            Xin chào bạn! Tôi là <strong>Trinh Canary</strong>. Trong suốt những năm tháng làm kinh doanh hệ thống, tôi thấu hiểu sâu sắc nỗi đau của những người làm MLM chân chính: bị từ chối, bị hiểu lầm, bạn bè xa lánh khi mình chỉ muốn chia sẻ một cơ hội tốt.
+          </p>
+          <p class="text-gray-700 leading-relaxed text-sm sm:text-base font-semibold text-brandTeal">
+            Trong 2 ngày này, Trinh sẽ chuyển giao toàn bộ bí kíp, kịch bản và phễu làm sẵn này cho bạn, giúp bạn xây dựng đội nhóm vững mạnh và tạo ra dòng tiền thụ động xứng đáng!
+          </p>
+
+          <div class="pt-2">
+            <div class="flex items-center gap-6 text-sm font-semibold text-gray-800">
+              <div class="flex items-center gap-2">
+                <i class="fas fa-users text-brandPink text-xl"></i>
+                <span>Hệ thống hàng ngàn F1</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-heart text-red-500 text-xl"></i>
+                <span>Đồng hành tận tâm</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-shield-alt text-brandTeal text-xl"></i>
+                <span>Cầm tay chỉ việc</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= BEFORE VS AFTER COMPARISON ================= -->
+  <section class="py-16 px-4 bg-gray-100 border-b border-gray-200">
+    <div class="max-w-4xl mx-auto">
+      
+      <div class="text-center mb-10">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brandDark">
+          LÀM MLM CŨ <span class="text-brandRed">VS</span> LÀM HỆ THỐNG CÙNG TRINH CANARY
+        </h2>
+        <p class="text-gray-600 text-sm sm:text-base mt-2">Bạn chọn tiếp tục chật vật hay bước lên tầm cao mới?</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- BEFORE -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border-2 border-red-300 shadow-sm">
+          <div class="flex items-center gap-3 text-brandRed font-bold text-xl pb-4 border-b border-gray-200">
+            <i class="fas fa-battery-empty text-3xl"></i>
+            <span>LÀM MLM TRUYỀN THỐNG CŨ:</span>
+          </div>
+          <ul class="space-y-4 mt-6 text-gray-700 text-sm sm:text-base">
+            <li class="flex items-start gap-3">
+              <i class="fas fa-times text-brandRed text-lg mt-0.5"></i>
+              <span>Lập danh sách người quen 100-200 người rồi gọi điện làm phiền từng người.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-times text-brandRed text-lg mt-0.5"></i>
+              <span>Ngồi đồng ở quán cà phê cả buổi, tốn tiền, tốn thời gian mà khách không vào.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-times text-brandRed text-lg mt-0.5"></i>
+              <span>Bị người thân xa lánh, bạn bè nghi kỵ, gắn mác "đa cấp lừa đảo".</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-times text-brandRed text-lg mt-0.5"></i>
+              <span>Mỗi tháng đau đầu vì ôm hàng giữ danh hiệu, thu nhập bấp bênh không ổn định.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- AFTER -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border-2 border-brandTeal shadow-sm">
+          <div class="flex items-center gap-3 text-brandTeal font-bold text-xl pb-4 border-b border-gray-200">
+            <i class="fas fa-rocket text-3xl"></i>
+            <span>HỆ THỐNG TỰ ĐỘNG CÙNG TRINH CANARY:</span>
+          </div>
+          <ul class="space-y-4 mt-6 text-gray-700 text-sm sm:text-base">
+            <li class="flex items-start gap-3">
+              <i class="fas fa-check text-brandTeal text-lg mt-0.5 font-bold"></i>
+              <span>Không đụng đến 1 người quen nào! 100% đối tác là người lạ chất lượng từ Internet.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-check text-brandTeal text-lg mt-0.5 font-bold"></i>
+              <span>Người quan tâm tự điền form xin bạn tư vấn qua Zalo mỗi ngày.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-check text-brandTeal text-lg mt-0.5 font-bold"></i>
+              <span>Định vị bạn là Thủ Lĩnh / Chuyên Gia có giá trị cao, được mọi người tôn trọng.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-check text-brandTeal text-lg mt-0.5 font-bold"></i>
+              <span>Hệ thống tự động đào tạo F1, giúp đội nhóm bùng nổ cấp số nhân bền vững.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FINAL OFFER & VALUE STACK ================= -->
+  <section class="py-16 px-4 bg-gradient-to-b from-gray-900 to-black text-white">
+    <div class="max-w-3xl mx-auto text-center">
+      
+      <span class="bg-red-600 text-white font-bold px-4 py-1.5 rounded-full text-xs uppercase tracking-widest animate-pulse">
+        Cơ hội duy nhất hôm nay
+      </span>
+      
+      <h2 class="text-3xl sm:text-5xl font-extrabold mt-4 mb-2 text-white">
+        BẠN CÀNG DO DỰ... <span class="text-brandPink">ĐỐI THỦ CÀNG HÚT HẾT F1 CỦA BẠN!</span>
+      </h2>
+      <p class="text-gray-300 text-sm sm:text-base mb-8">
+        Hàng ngàn người đang chuyển mình sang mô hình tuyển dụng tự động 4.0. Bạn sẽ là người đón đầu hay tụt hậu?
+      </p>
+
+      <!-- Pricing Card -->
+      <div class="bg-gray-800/90 border-2 border-brandPink/50 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden backdrop-blur">
+        
+        <div class="absolute -right-12 -top-12 w-36 h-36 bg-brandPink/20 rounded-full blur-2xl"></div>
+
+        <h3 class="text-xl sm:text-2xl font-bold uppercase tracking-wider text-gray-200">
+          TỔNG TOÀN BỘ GIÁ TRỊ VŨ KHÍ BẠN NHẬN ĐƯỢC:
+        </h3>
+        
+        <div class="my-6">
+          <p class="text-gray-400 text-lg line-through">Giá gốc thông thường: 125.970.000 VNĐ</p>
+          <div class="text-4xl sm:text-6xl font-black text-yellow-300 tracking-tight mt-2">
+            HÔM NAY: MIỄN PHÍ
+          </div>
+          <p class="text-xs sm:text-sm text-pink-300 font-semibold mt-2">
+            (Chỉ dành riêng cho 7 thủ lĩnh khát khao nhất đăng ký tại trang này)
+          </p>
+        </div>
+
+        <div class="space-y-3 text-left max-w-md mx-auto text-sm sm:text-base border-t border-b border-gray-700 py-6 my-6 text-gray-200">
+          <div class="flex items-center justify-between">
+            <span>✅ Vé tham dự trực tiếp 2 Ngày Thử Thách</span>
+            <span class="text-yellow-400 font-bold">19.990.000đ</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span>✅ Trọn bộ 8 Quà Tặng & Phễu Tuyển F1</span>
+            <span class="text-yellow-400 font-bold">105.980.000đ</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span>✅ Trinh Canary kèm cặp trực tiếp 1-1</span>
+            <span class="text-yellow-400 font-bold">VÔ GIÁ</span>
+          </div>
+        </div>
+
+        <!-- Big CTA Button -->
+        <button onclick="openRegisterModal('Final Offer Section')" 
+                class="cta-btn-shimmer w-full bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-500 hover:from-yellow-300 hover:to-amber-400 text-brandDark font-black text-xl sm:text-2xl py-4 px-8 rounded-2xl shadow-cta transform transition hover:scale-105 active:scale-100">
+          <div class="flex items-center justify-center gap-2">
+            <i class="fas fa-ticket-alt"></i>
+            <span>ĐĂNG KÝ NHẬN VÉ & PHỄU TUYỂN F1 NGAY</span>
+          </div>
+          <p class="text-xs font-semibold text-gray-900 mt-1 uppercase tracking-wider">
+            Nhấn vào đây để giữ 1 trong 7 chỗ cuối cùng cùng Trinh Canary
+          </p>
+        </button>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FAQ SECTION ================= -->
+  <section class="py-16 px-4 bg-white border-b border-gray-200">
+    <div class="max-w-3xl mx-auto">
+      
+      <div class="text-center mb-10">
+        <span class="text-brandPink font-bold text-xs uppercase tracking-widest">Giải đáp câu hỏi thường gặp</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brandDark mt-1">CÂU HỎI THƯỜNG GẶP (FAQ)</h2>
+      </div>
+
+      <div class="space-y-4" id="faq-accordion">
+        
+        <!-- FAQ 1 -->
+        <div class="border border-gray-200 rounded-xl overflow-hidden">
+          <button class="w-full text-left p-5 font-bold text-gray-800 bg-gray-50 hover:bg-gray-100 flex items-center justify-between transition" onclick="toggleFaq(this)">
+            <span>1. Tôi đang làm công ty MLM khác thì có áp dụng được hệ thống này không?</span>
+            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-200"></i>
+          </button>
+          <div class="p-5 text-gray-600 text-sm leading-relaxed hidden bg-white border-t border-gray-200">
+            Hoàn toàn áp dụng được 100%! Phương pháp Attraction Marketing và Phễu Tuyển Dụng Tự Động là nền tảng cốt lõi của ngành kinh doanh mạng lưới hiện đại. Dù bạn kinh doanh mỹ phẩm, thực phẩm chức năng, bảo hiểm hay sản phẩm số, hệ thống này đều hút đúng đối tác có nhu cầu cho bạn.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="border border-gray-200 rounded-xl overflow-hidden">
+          <button class="w-full text-left p-5 font-bold text-gray-800 bg-gray-50 hover:bg-gray-100 flex items-center justify-between transition" onclick="toggleFaq(this)">
+            <span>2. Tôi không rành máy tính và công nghệ, có cài đặt được phễu không?</span>
+            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-200"></i>
+          </button>
+          <div class="p-5 text-gray-600 text-sm leading-relaxed hidden bg-white border-t border-gray-200">
+            Chắc chắn có! Toàn bộ website, kịch bản chatbot và video đã được lập trình sẵn. Bạn chỉ cần làm theo hướng dẫn từng bước trên điện thoại: gắn link Zalo và số điện thoại của bạn vào là cỗ máy bắt đầu chạy. Trinh Canary sẽ kèm trực tiếp cho bạn!
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="border border-gray-200 rounded-xl overflow-hidden">
+          <button class="w-full text-left p-5 font-bold text-gray-800 bg-gray-50 hover:bg-gray-100 flex items-center justify-between transition" onclick="toggleFaq(this)">
+            <span>3. Chương trình học diễn ra theo hình thức nào? Có mất tiền không?</span>
+            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-200"></i>
+          </button>
+          <div class="p-5 text-gray-600 text-sm leading-relaxed hidden bg-white border-t border-gray-200">
+            Thử thách diễn ra trực tuyến qua Zoom kín trong 2 ngày cuối tuần. Vé tham dự và toàn bộ kho quà tặng 125 triệu là hoàn toàn MIỄN PHÍ cho 7 người nhanh tay đăng ký tại trang này.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="border border-gray-200 rounded-xl overflow-hidden">
+          <button class="w-full text-left p-5 font-bold text-gray-800 bg-gray-50 hover:bg-gray-100 flex items-center justify-between transition" onclick="toggleFaq(this)">
+            <span>4. Tôi có thể liên hệ trực tiếp với Trinh Canary qua đâu?</span>
+            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-200"></i>
+          </button>
+          <div class="p-5 text-gray-600 text-sm leading-relaxed hidden bg-white border-t border-gray-200">
+            Bạn có thể gọi điện hoặc nhắn tin trực tiếp qua Hotline/Zalo chính thức của Trinh Canary: <strong class="text-brandRed">0906.885.584</strong> để được hỗ trợ nhanh nhất.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-gray-950 text-gray-400 py-12 px-4 text-xs sm:text-sm">
+    <div class="max-w-5xl mx-auto text-center space-y-4">
+      <h4 class="text-white font-bold text-base tracking-wider uppercase">CỘNG ĐỒNG KINH DOANH HỆ THỐNG 4.0 - TRINH CANARY</h4>
+      <p class="max-w-2xl mx-auto text-gray-400">
+        Đại diện: <strong>TRINH CANARY</strong> • Hotline/Zalo: <a href="https://zalo.me/0906885584" target="_blank" class="text-white font-bold underline hover:text-brandPink">0906.885.584</a>
+      </p>
+      <p class="max-w-2xl mx-auto text-gray-500">
+        Website đào tạo thực chiến về tự động hóa tuyển dụng F1 và xây dựng đội nhóm kinh doanh mạng lưới hiện đại. Cam kết bảo mật thông tin 100%.
+      </p>
+      <div class="flex items-center justify-center gap-6 text-gray-400 pt-2">
+        <a href="#hero" class="hover:text-white">Trang chủ</a>
+        <span>•</span>
+        <a href="https://zalo.me/0906885584" target="_blank" class="hover:text-white font-bold text-brandPink">Zalo: 0906.885.584</a>
+        <span>•</span>
+        <a href="javascript:openRegisterModal('Footer')" class="hover:text-white">Đăng ký giữ chỗ</a>
+      </div>
+      <p class="text-gray-600 text-xs pt-4 border-t border-gray-800">
+        © 2026 TRINH CANARY. All rights reserved. Hệ Thống Tuyển F1 Tự Động 4.0.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING QUICK ZALO CONTACT BUTTON ================= -->
+  <div class="fixed bottom-20 right-4 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-2">
+    <a href="https://zalo.me/0906885584" target="_blank" 
+       class="flex items-center gap-2 bg-[#0068FF] hover:bg-blue-600 text-white font-bold py-2.5 px-4 rounded-full shadow-zalo transition-all duration-300 transform hover:scale-105 active:scale-95 text-xs sm:text-sm animate-bounce">
+      <i class="fas fa-comment-dots text-lg"></i>
+      <span>Chat Zalo: 0906.885.584</span>
+    </a>
+  </div>
+
+  <!-- ================= STICKY MOBILE CTA BAR ================= -->
+  <div id="mobile-sticky-bar" class="fixed bottom-0 left-0 right-0 p-3 bg-white/95 backdrop-blur-md border-t border-gray-300 z-30 sm:hidden shadow-2xl transition-all duration-300">
+    <div class="flex items-center gap-2">
+      <div class="shrink-0 text-left">
+        <p class="text-[10px] text-brandRed font-bold uppercase">Còn 7 suất</p>
+        <p class="text-xs font-black text-gray-900">MIỄN PHÍ</p>
+      </div>
+      <button onclick="openRegisterModal('Sticky Mobile')" 
+              class="flex-1 bg-brandRed hover:bg-darkRed text-white font-extrabold py-3 px-4 rounded-xl text-center text-sm shadow-md animate-pulse">
+        👉 ĐĂNG KÝ HÚT F1 TỰ ĐỘNG NGAY
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= REGISTRATION POPUP MODAL ================= -->
+  <div id="registerModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/75 backdrop-blur-sm p-4 hidden opacity-0 transition-opacity duration-300">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl border-4 border-brandPink/30 transform scale-95 transition-transform duration-300 max-h-[90vh] overflow-y-auto">
+      
+      <!-- Close Button -->
+      <button onclick="closeRegisterModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center transition">
+        <i class="fas fa-times text-lg"></i>
+      </button>
+
+      <!-- Modal Header -->
+      <div class="text-center mb-6">
+        <span class="inline-block bg-pink-100 text-brandPink text-xs font-bold px-3 py-1 rounded-full uppercase mb-2">
+          ⚡ Cơ hội kèm cặp cùng Trinh Canary
+        </span>
+        <h3 class="text-2xl sm:text-3xl font-black text-brandDark uppercase leading-tight">
+          NHẬN VÉ WORKSHOP & TRỌN BỘ PHỄU TUYỂN F1
+        </h3>
+        <p class="text-gray-600 text-xs sm:text-sm mt-1">
+          Trinh Canary sẽ gửi vé phòng Zoom và tài liệu qua Zalo của bạn!
+        </p>
+      </div>
+
+      <!-- Registration Form -->
+      <form id="leadForm" onsubmit="handleFormSubmit(event)" class="space-y-3.5">
+        
+        <!-- Hidden source input -->
+        <input type="hidden" id="formSource" name="source" value="Website Trinh Canary">
+
+        <!-- Full Name -->
+        <div>
+          <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Họ và tên của bạn: *</label>
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-gray-400">
+              <i class="fas fa-user"></i>
+            </span>
+            <input type="text" id="fullName" name="fullName" required 
+                   placeholder="Ví dụ: Nguyễn Thị Hoa"
+                   class="w-full pl-10 pr-4 py-2.5 sm:py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brandPink focus:border-brandPink outline-none text-sm transition">
+          </div>
+        </div>
+
+        <!-- Phone / Zalo -->
+        <div>
+          <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Số điện thoại (dùng Zalo để nhận vé): *</label>
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-gray-400">
+              <i class="fas fa-phone-alt"></i>
+            </span>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{9,11}"
+                   placeholder="Ví dụ: 0912345678"
+                   class="w-full pl-10 pr-4 py-2.5 sm:py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brandPink focus:border-brandPink outline-none text-sm transition">
+          </div>
+        </div>
+
+        <!-- Current Profession / MLM Experience -->
+        <div>
+          <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Kinh nghiệm kinh doanh của bạn: *</label>
+          <div class="relative">
+            <select id="experience" name="experience" required
+                    class="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brandPink focus:border-brandPink outline-none text-sm transition bg-white text-gray-700">
+              <option value="" disabled selected>-- Chọn tình trạng hiện tại --</option>
+              <option value="Dang lam MLM muon dot pha">Đang làm hệ thống/MLM (Muốn bứt phá tuyển F1)</option>
+              <option value="Da tung lam nhung that bai">Đã từng làm hệ thống nhưng bế tắc / thất bại</option>
+              <option value="Kinh doanh tu do / Me bim sua">Kinh doanh tự do / Bán hàng online / Mẹ bỉm</option>
+              <option value="Nhan vien van phong tim nguon thu nhap 2">Nhân viên văn phòng muốn tìm nguồn thu nhập thứ 2</option>
+              <option value="Nguoi moi hoan toan">Người mới hoàn toàn muốn học hỏi</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Target Income -->
+        <div>
+          <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Mục tiêu thu nhập thụ động mong muốn / tháng:</label>
+          <select id="targetIncome" name="targetIncome"
+                  class="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brandPink focus:border-brandPink outline-none text-sm transition bg-white text-gray-700">
+            <option value="20-50 trieu">20 - 50 Triệu / tháng</option>
+            <option value="50-100 trieu" selected>50 - 100 Triệu / tháng</option>
+            <option value="Tren 100 trieu">Trên 100 Triệu / tháng (Xây dựng đại hệ thống)</option>
+          </select>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="pt-2">
+          <button type="submit" id="submitBtn"
+                  class="cta-btn-shimmer w-full bg-gradient-to-r from-brandPink to-brandRed hover:from-brandPinkDark hover:to-darkRed text-white font-black text-lg py-3.5 px-6 rounded-xl shadow-cta transition transform hover:scale-[1.02] active:scale-95">
+            <i class="fas fa-check-circle mr-2"></i> XÁC NHẬN GIỮ CHỖ MIỄN PHÍ NGAY
+          </button>
+        </div>
+
+        <p class="text-[11px] text-gray-500 text-center flex items-center justify-center gap-1">
+          <i class="fas fa-lock text-brandTeal"></i> Thông tin được mã hóa an toàn • Hotline: 0906.885.584
+        </p>
+
+      </form>
+
+      <!-- Success State (hidden by default) -->
+      <div id="successMessage" class="hidden text-center py-6 space-y-4">
+        <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto text-3xl animate-bounce">
+          <i class="fas fa-check"></i>
+        </div>
+        <h4 class="text-2xl font-black text-gray-900 uppercase">ĐĂNG KÝ THÀNH CÔNG!</h4>
+        <p class="text-gray-700 text-sm">
+          Thông tin của <strong class="text-brandPink" id="userNameDisplay">bạn</strong> đã được đồng bộ vào hệ thống.
+        </p>
+        
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-4 text-xs sm:text-sm text-blue-900 space-y-2">
+          <p class="font-semibold">
+            ⏳ Đang tự động mở Zalo kết nối với <strong>Trinh Canary (0906.885.584)</strong> sau <span id="zaloTimer" class="font-bold text-brandRed text-base">3</span> giây...
+          </p>
+          <p class="text-xs text-gray-500">
+            (Nếu trình duyệt không tự chuyển, vui lòng bấm vào nút bên dưới để nhắn tin nhận vé Zoom)
+          </p>
+        </div>
+
+        <div class="pt-2">
+          <a id="directZaloBtn" href="https://zalo.me/0906885584" target="_blank" 
+             class="cta-btn-shimmer w-full bg-[#0068FF] hover:bg-blue-600 text-white font-extrabold py-3.5 px-6 rounded-2xl text-sm sm:text-base shadow-zalo flex items-center justify-center gap-2 transform transition hover:scale-[1.02] active:scale-95 animate-pulseCustom">
+            <i class="fas fa-comment-dots text-xl"></i>
+            <span>BẤM VÀO ĐÂY ĐỂ MỞ ZALO NHẮN TRINH CANARY NGAY</span>
+          </a>
+        </div>
+
+        <div>
+          <button onclick="closeRegisterModal()" class="text-gray-400 hover:text-gray-600 text-xs font-semibold underline mt-2">
+            Đóng cửa sổ này
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= VIDEO PLAYER MODAL ================= -->
+  <div id="videoModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md p-4 hidden opacity-0 transition-opacity duration-300">
+    <div class="bg-black rounded-2xl max-w-3xl w-full relative overflow-hidden shadow-2xl border border-gray-800">
+      <button onclick="closeVideoModal()" class="absolute top-3 right-3 text-white bg-black/60 hover:bg-black w-8 h-8 rounded-full flex items-center justify-center z-10 transition">
+        <i class="fas fa-times text-lg"></i>
+      </button>
+      <div class="relative pb-[56.25%] h-0">
+        <!-- Sample video embed -->
+        <iframe id="videoIframe" class="absolute inset-0 w-full h-full" 
+                src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=0" 
+                title="Video Giới Thiệu Cỗ Máy Tuyển F1" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= LIVE SOCIAL PROOF NOTIFICATION TOAST ================= -->
+  <div id="liveToast" class="fixed bottom-20 left-4 z-40 bg-white/95 backdrop-blur shadow-2xl rounded-2xl p-3 sm:p-4 border border-gray-200 flex items-center gap-3 max-w-xs transition-all duration-500 transform translate-y-24 opacity-0 pointer-events-none">
+    <div class="w-10 h-10 rounded-full bg-brandPink text-white flex items-center justify-center font-bold text-sm shrink-0">
+      <i class="fas fa-user-plus"></i>
+    </div>
+    <div class="text-xs">
+      <p class="font-bold text-gray-900" id="toastName">Chị Thu Thảo (Hà Nội)</p>
+      <p class="text-gray-500">Vừa đăng ký nhận phễu tuyển F1 từ Trinh Canary</p>
+    </div>
+  </div>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script>
+    // 1. Live Countdown Timer (15 minutes looping)
+    let countdownMinutes = 14;
+    let countdownSeconds = 59;
+    const countdownEl = document.getElementById('countdown');
+
+    function updateCountdown() {
+      if (countdownSeconds === 0) {
+        if (countdownMinutes === 0) {
+          countdownMinutes = 15;
+          countdownSeconds = 0;
+        } else {
+          countdownMinutes--;
+          countdownSeconds = 59;
+        }
+      } else {
+        countdownSeconds--;
+      }
+      const minStr = String(countdownMinutes).padStart(2, '0');
+      const secStr = String(countdownSeconds).padStart(2, '0');
+      countdownEl.textContent = `${minStr}:${secStr}`;
+    }
+    setInterval(updateCountdown, 1000);
+
+    // 2. Registration Modal Logic
+    const registerModal = document.getElementById('registerModal');
+    const formSource = document.getElementById('formSource');
+    const leadForm = document.getElementById('leadForm');
+    const successMessage = document.getElementById('successMessage');
+    const userPhoneDisplay = document.getElementById('userPhoneDisplay');
+
+    function openRegisterModal(source = 'General') {
+      formSource.value = source;
+      registerModal.classList.remove('hidden');
+      setTimeout(() => {
+        registerModal.classList.remove('opacity-0');
+        registerModal.querySelector('.transform').classList.remove('scale-95');
+        registerModal.querySelector('.transform').classList.add('scale-100');
+      }, 10);
+    }
+
+    function closeRegisterModal() {
+      registerModal.classList.add('opacity-0');
+      registerModal.querySelector('.transform').classList.add('scale-95');
+      registerModal.querySelector('.transform').classList.remove('scale-100');
+      setTimeout(() => {
+        registerModal.classList.add('hidden');
+        leadForm.classList.remove('hidden');
+        successMessage.classList.add('hidden');
+      }, 300);
+    }
+
+    // Close on backdrop click
+    registerModal.addEventListener('click', (e) => {
+      if (e.target === registerModal) {
+        closeRegisterModal();
+      }
+    });
+
+    // =========================================================================
+    // CẤU HÌNH ĐỒNG BỘ GOOGLE SHEETS (LỰA CHỌN A)
+    // Xem hướng dẫn tại file "google_sheet_setup.js" để lấy URL và dán vào đây:
+    // =========================================================================
+    const GOOGLE_SHEET_WEBAPP_URL = ""; 
+
+    // 3. Form Submit Handling (Kết Hợp A: Google Sheets & C: Chuyển Ngay Sang Zalo)
+    let zaloRedirectTimer = null;
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const submitBtn = document.getElementById('submitBtn');
+      const name = document.getElementById('fullName').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const experience = document.getElementById('experience').value;
+      const targetIncome = document.getElementById('targetIncome').value;
+      const source = formSource.value;
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Đang ghi nhận thông tin...';
+
+      // 1. Tạo gói dữ liệu ứng viên F1
+      const newLead = {
+        name: name,
+        phone: phone,
+        experience: experience,
+        targetIncome: targetIncome,
+        source: source,
+        timestamp: new Date().toISOString()
+      };
+
+      // 2. Lưu dự phòng tại LocalStorage trình duyệt
+      const existingLeads = JSON.parse(localStorage.getItem('mlm_f1_leads') || '[]');
+      existingLeads.push(newLead);
+      localStorage.setItem('mlm_f1_leads', JSON.stringify(existingLeads));
+      console.log('✅ Lead F1 đã lưu LocalStorage:', newLead);
+
+      // 3. (LỰA CHỌN A): Tự động đẩy dữ liệu sang Google Sheets nếu đã cấu hình Web App URL
+      if (GOOGLE_SHEET_WEBAPP_URL && GOOGLE_SHEET_WEBAPP_URL.trim() !== "") {
+        fetch(GOOGLE_SHEET_WEBAPP_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(newLead)
+        }).then(() => {
+          console.log('✅ Đã đồng bộ sang Google Sheets thành công!');
+        }).catch(err => {
+          console.error('Lỗi gửi Google Sheets:', err);
+        });
+      }
+
+      // 4. (LỰA CHỌN C): Chuẩn bị đường link Zalo dẫn thẳng đến Trinh Canary (0906.885.584)
+      const zaloUrl = "https://zalo.me/0906885584";
+      const directZaloBtn = document.getElementById('directZaloBtn');
+      if (directZaloBtn) {
+        directZaloBtn.href = zaloUrl;
+      }
+
+      // 5. Hiển thị thông báo & Đếm ngược tự động chuyển hướng sang Zalo
+      setTimeout(() => {
+        leadForm.classList.add('hidden');
+        const nameDisplay = document.getElementById('userNameDisplay');
+        if (nameDisplay) nameDisplay.textContent = name;
+        successMessage.classList.remove('hidden');
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> XÁC NHẬN GIỮ CHỖ MIỄN PHÍ NGAY';
+        leadForm.reset();
+
+        // Bắt đầu đếm ngược 3 giây rồi tự động mở Zalo
+        let timeLeft = 3;
+        const timerEl = document.getElementById('zaloTimer');
+        if (zaloRedirectTimer) clearInterval(zaloRedirectTimer);
+
+        zaloRedirectTimer = setInterval(() => {
+          timeLeft--;
+          if (timerEl) timerEl.textContent = timeLeft;
+          if (timeLeft <= 0) {
+            clearInterval(zaloRedirectTimer);
+            window.open(zaloUrl, '_blank');
+          }
+        }, 1000);
+      }, 700);
+    }
+
+    // 4. Video Modal Logic
+    const videoModal = document.getElementById('videoModal');
+    function openVideoModal() {
+      videoModal.classList.remove('hidden');
+      setTimeout(() => {
+        videoModal.classList.remove('opacity-0');
+      }, 10);
+    }
+
+    function closeVideoModal() {
+      videoModal.classList.add('opacity-0');
+      setTimeout(() => {
+        videoModal.classList.add('hidden');
+      }, 300);
+    }
+
+    videoModal.addEventListener('click', (e) => {
+      if (e.target === videoModal) {
+        closeVideoModal();
+      }
+    });
+
+    // 5. Accordion FAQ
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('i');
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+
+    // 6. Social Proof Fake Live Toast Notification
+    const fakeNames = [
+      'Chị Ngọc Mai (Hà Nội - Đang làm Mỹ Phẩm)',
+      'Anh Đức Trọng (TP.HCM - Tìm cơ hội kinh doanh)',
+      'Bạn Hoàng Yến (Đà Nẵng - Mẹ bỉm sữa)',
+      'Anh Minh Tuấn (Bình Dương - Đang làm MLM bế tắc)',
+      'Chị Thu Hà (Hải Phòng - Dân văn phòng)',
+      'Anh Quốc Bảo (Cần Thơ - Tìm nguồn thu nhập thứ 2)'
+    ];
+    const toast = document.getElementById('liveToast');
+    const toastName = document.getElementById('toastName');
+
+    function triggerRandomToast() {
+      const randomUser = fakeNames[Math.floor(Math.random() * fakeNames.length)];
+      toastName.textContent = randomUser;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 4000);
+    }
+
+    // Trigger first toast after 4s, then loop every 16s
+    setTimeout(() => {
+      triggerRandomToast();
+      setInterval(triggerRandomToast, 16000);
+    }, 4000);
+  </script>
+
+</body>
+</html>
